@@ -1,0 +1,17 @@
+<body align="center">
+
+
+  <h1>Menu</h1>
+  <!-- Ruteo por medio de funciones: ver mas en archivo .ts -->
+  <button class="btn btn-info" type="button" (click)="Juegos('adivinaElNum')" >Adivina el numero</button>
+  <button class="btn btn-info" type="button" (resultadoEnviado)="Metodoalguno()" (click)="Juegos('actividadAritmetica')" >Actividad aritmetica</button>
+  
+  <!-- Ruteo directo: Es necesario importar en APP.COMPONENTE.TS las librerias de ruteo: ver en APP.COMPONEN.TS -->
+  <!-- <button type="button" routerLink="/listaDeResultados" >Lista de resultados</button> -->
+  <button class="btn btn-primary" type="button" routerLink="/adivina+Lista" >Adivina + Lista</button>
+  <button class="btn btn-primary" type="button" routerLink="/error" >Juego</button>
+
+  <button type="button" routerLink="/listado" >Listado</button>
+
+
+</body>

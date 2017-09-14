@@ -1,0 +1,22 @@
+<html>
+<body>
+
+  
+
+<div name="FrmJuego" align="Center" class="form-group">
+
+  <h1 class="alert alert-primary">{{nombreJuego}}</h1>
+  Descripcion: {{descripcion}}
+  <br>
+  </div>
+
+  <div align="center">
+  <input type="text" placeholder="Introduzca un numero" [(ngModel)]="numero_Usuario">
+  <button class="btn btn-primary" (click)="Adivinar()" *ngIf="this.obj.juega">Adivinar</button>  
+  <button class="btn btn-primary" (click)="GenerarNum()">Nuevo</button>
+  <br>
+  {{mensaje}}
+  </div>
+
+</body>
+</html>

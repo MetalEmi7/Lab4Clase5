@@ -1,0 +1,21 @@
+<div  class="container">
+<table class="table table-striped" border="2">
+      <thead>
+        <tr>
+          <th>Juego</th>
+          <th>Jugador</th>
+          <th>Resultado</th>      
+        </tr>
+      </thead>    
+        
+      
+      <tr *ngFor="let juego of Listado" >
+        <th>{{juego.nombreJuego}}</th>
+        <th>{{juego.jugador}}</th>
+        <th>{{juego.resultado}}</th>
+      </tr>
+
+  </table>
+</div>    
+
+
