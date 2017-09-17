@@ -6,16 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Clase 3';
-
-  ListaRecivida = "NADA";
+  title = 'Clase 5';
 
 
-  
+  /*
 mostrar(event)
 {
   this.ListaRecivida = event;
   console.log("en app", event);
-}
+}*/
 
 }

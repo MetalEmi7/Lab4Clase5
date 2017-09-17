@@ -1,17 +1,17 @@
 <body align="center">
   <div class="alert alert-primary">
   <!-- Ruteo por medio de funciones: ver mas en archivo .ts -->
-  <button class="btn btn-info" type="button" (click)="Juegos('adivinaElNum')" >Adivina el numero</button>
-  <button class="btn btn-info" type="button" (resultadoEnviado)="Metodoalguno()" (click)="Juegos('actividadAritmetica')">Actividad aritmetica</button>
+  <button class="btn btn-success" type="button" routerLink="/menu/adivinaElNum" >Listado</button>
+  <button class="btn btn-success" type="button" routerLink="/menu/actividadAritmetica" >principal</button>
   
   <!-- Ruteo directo: Es necesario importar en APP.COMPONENTE.TS las librerias de ruteo: ver en APP.COMPONEN.TS -->
   <!-- <button type="button" routerLink="/listaDeResultados" >Lista de resultados</button> -->
-  <button class="btn btn-info" type="button" routerLink="/adivina+Lista" >Adivina + Lista</button>
+  <button class="btn btn-info" type="button" routerLink="/menu/adivina+Lista" >Adivina + Lista</button>
   
-  <button class="btn btn-success" type="button" routerLink="/listado" >Listado</button>
+  <button class="btn btn-success" type="button" routerLink="/menu/listado" >Listado</button>
   <button class="btn btn-dark" type="button" routerLink="/login" >Log Out</button>
-
   <button class="btn btn-danger" type="button" routerLink="/error" >ERROR</button>
 </div>
-
 </body>
+
+<router-outlet></router-outlet>

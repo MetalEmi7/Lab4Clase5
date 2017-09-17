@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms"; //Necesario p
 import { AppComponent } from './app.component';
 
 //Necesario para rutear
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes ,RouterLinkActive} from '@angular/router';
 
 //Componentes generales
 import { LoginComponent } from './Login/Login.Component';
@@ -21,39 +21,22 @@ import { AdivinaMasListadoComponent } from './adivina-mas-listado/adivina-mas-li
 import { ActividadAritmeticaComponent } from './actividad-aritmetica/actividad-aritmetica.component';
 import { MiHttpService } from './Servicios/mi-http.service';
 
+import { RoutingModule } from "./routing/routing.module";
+
 //Entidades
 import { Juego } from './Clases/Juego';
 import { ListaComponent } from './lista/lista.component';
 
-const miRuteo = [
-{path: "login",component: LoginComponent},
-{path: "menu",component: MenuComponent},
-{path: "adivinaElNum",component: AdivinaElNumeroComponent},
-{path: "actividadAritmetica",component: ActividadAritmeticaComponent},
-{path: "listado",component: ListaComponent},
-{path: "listaDeResultados",component: ListadoDeResultadoComponent},
-{path: "adivina+Lista",component: AdivinaMasListadoComponent},
-{path: "",component: LoginComponent},
-{path: "**",component: ErrorComponent}
-]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdivinaElNumeroComponent,
-    ListadoDeResultadoComponent,
-    LoginComponent,
-    ErrorComponent,
-    MenuComponent,
-    AdivinaMasListadoComponent,
-    ActividadAritmeticaComponent,
-    PrincipalComponent,
-    ListaComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(miRuteo),
+    RoutingModule,
+    RouterModule,     //Debe estar importado ya que es quien provee la tag ROUTER-OUTLET.
     HttpModule
   ],
   providers: [
