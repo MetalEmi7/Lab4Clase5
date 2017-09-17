@@ -47,6 +47,8 @@ export class MenuComponent implements OnInit {
 
 
   ngOnInit() {
+    // alert("Bienvenido "+ localStorage.getItem("user")+"..."); //se muestra antes que la pagina
+    
   }
 
 }

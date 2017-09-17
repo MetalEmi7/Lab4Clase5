@@ -16,13 +16,12 @@ Pass:string;
   {}
 
   Loguearse()
-  {  
-    console.log("Hola user");
+  { 
     //Hardcode
-    if (this.User == "admin" && this.Pass == "123456")
+    if (this.User == "admin" && this.Pass == "1234")
       {
         this.router.navigate(["/menu"]);
-        localStorage.setItem("user", this.User);
+        localStorage.setItem("user", this.User);        
       }
   }
 
