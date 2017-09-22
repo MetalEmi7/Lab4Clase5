@@ -11,16 +11,19 @@ export class ListaComponent implements OnInit {
 Lista_Juegos:Array<Juego>;
 Propiedad:JuegoService;
 
+Lista_Rest:Array<any>;
+
   constructor( MiServicio:JuegoService )
   {
      this.Propiedad = MiServicio;
 
      this.Lista_Juegos = new Array<Juego>();
+     this.Lista_Rest = new Array<any>();
   }
 
 
 
-  llamarService()
+  listarObjetos()
   {
     console.log("Desde componente listado (nombrado como lista)");
     this.Lista_Juegos.push(new Juego);
@@ -35,6 +38,16 @@ Propiedad:JuegoService;
     console.log("Desde componente listado se llama al servicio JUEGO");
     this.Lista_Juegos = this.Propiedad.Listar();
   }
+
+
+  /**
+   * LlamarService_ListarREST
+   */
+  public llamarService_ListarREST() {
+    console.log("LISTANDO REST...");
+    this.Propiedad.ListarRest();
+    alert("Ver en Consola");
+  }   
 
   ngOnInit() {}
 

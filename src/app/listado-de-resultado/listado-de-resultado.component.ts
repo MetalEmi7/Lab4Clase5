@@ -11,6 +11,7 @@ import { Input } from '@angular/core';
 export class ListadoDeResultadoComponent implements OnInit {
 @Input()
   Listado:Array<any> = new Array<any>();
+  descripcion:string="Lista de Resultados"
 
   public Lista_Juegos:Array<Juego> = new Array<Juego>();
 

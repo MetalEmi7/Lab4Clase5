@@ -22,12 +22,12 @@ export class JuegoService {
       return this.Lista_Juegos;
   }
 
-    public ListarServicio()
+    public ListarRest()
     {
       
-      this.miHttp.httpGetPromise("https://restcountries.eu/rest/v2/all", "")
+      this.miHttp.httpGetPromise('https://restcountries.eu/rest/v2/all',"any")
       .then(data=>{console.log(data)})
-      .catch(data=>{console.log()})
+      .catch(error=>{console.log(error)})
 
     }
 

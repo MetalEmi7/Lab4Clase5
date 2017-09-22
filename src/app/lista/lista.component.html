@@ -1,9 +1,12 @@
+<div class="container">
+
 <div align="center" class="alert alert-success">
-<button name="Btn1" class="btn btn-success" (click)="llamarService()">BtnListado1</button>
-<button name="Btn2" class="btn btn-success" (click)="llamarService_Listar()">BtnListado2</button>
-<button name="Btn3" class="btn btn-success">Boton 3</button>
+<button name="Btn1" class="btn btn-success" (click)="listarObjetos()">BtnListado</button>
+
+<button name="Btn2" class="btn btn-success" (click)="llamarService_Listar()">BtnService</button>
+<button name="Btn3" class="btn btn-danger" (click)="llamarService_ListarREST()">Rest</button>
 <button name="Btn4" class="btn btn-success">Boton 4</button>
 </div>
-
+</div>
 <br>
 <app-listado-de-resultado [Listado]="Lista_Juegos" ></app-listado-de-resultado>
