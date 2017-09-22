@@ -12,7 +12,8 @@
       <tr *ngFor="let juego of Listado" >
         <th>{{juego.nombreJuego}}</th>
         <th>{{juego.jugador}}</th>
-        <th>{{juego.resultado}}</th>
+        <th *ngIf="juego.resultado">Gano</th>
+        <th *ngIf="!juego.resultado">Perdio</th>
       </tr>
 
   </table>

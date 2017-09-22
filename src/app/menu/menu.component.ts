@@ -16,14 +16,14 @@ export class MenuComponent implements OnInit {
   @Input()
   listadoRecivido:Array<any>;
 
-  constructor(private route: ActivatedRoute, private router: Router)
+  constructor(private route: ActivatedRoute, private router: Router) // no es necesario activarerouter para su funcionalidad.
   {
     this.listadoRecivido = new Array<any>();
   }
 
+  // Una forma de hacerlo: es necesario importar 'import { ParamMap, ActivatedRoute, Router } from '@angular/router';'
   Juegos(opcion)
   {
-
     switch (opcion) {
       case 'actividadAritmetica':
       this.router.navigate(["/actividadAritmetica"]);
@@ -35,8 +35,7 @@ export class MenuComponent implements OnInit {
 
       default:
         break;
-    }
-    
+    }    
   }
 
 

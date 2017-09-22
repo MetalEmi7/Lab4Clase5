@@ -15,6 +15,7 @@
 
         + Luego: 
 
+
   public httpGetPromise(url:string, Obj:any)
   {
     return this.http
