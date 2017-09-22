@@ -14,7 +14,6 @@ export class JuegoService {
 
   Listar()
   { 
-
       this.Lista_Juegos.push(new Juego);
       this.Lista_Juegos.push(new Juego);
       this.Lista_Juegos.push(new Juego);

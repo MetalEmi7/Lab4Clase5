@@ -18,36 +18,24 @@ Propiedad:JuegoService;
      this.Lista_Juegos = new Array<Juego>();
   }
 
+
+
   llamarService()
   {
+    console.log("Desde componente listado (nombrado como lista)");
+    this.Lista_Juegos.push(new Juego);
+    this.Lista_Juegos.push(new Juego);
+    this.Lista_Juegos.push(new Juego);
+    this.Lista_Juegos.push(new Juego);
+  }
+
+    
+  public llamarService_Listar()
+  {    
+    console.log("Desde componente listado se llama al servicio JUEGO");
     this.Lista_Juegos = this.Propiedad.Listar();
-    
-    /*
-      this.Lista_Juegos.push(new Juego);
-      this.Lista_Juegos.push(new Juego);
-      this.Lista_Juegos.push(new Juego);
-      this.Lista_Juegos.push(new Juego);
-      */
-
   }
 
-    public llamarService_Listar()
-  {
-    
-    
-    
-    this.Lista_Juegos = this.Propiedad.Listar();
-    
-    
-      this.Lista_Juegos.push(new Juego);
-      this.Lista_Juegos.push(new Juego);
-      this.Lista_Juegos.push(new Juego);
-      this.Lista_Juegos.push(new Juego);
-      
-
-  }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
