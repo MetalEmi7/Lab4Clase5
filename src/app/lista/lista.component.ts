@@ -9,9 +9,9 @@ import { JuegoService } from '../Servicios/juego.service';
 })
 export class ListaComponent implements OnInit {
 Lista_Juegos:Array<Juego>;
-Propiedad:JuegoService;
-
 Lista_Rest:Array<any>;
+
+Propiedad:JuegoService;
 
   constructor( MiServicio:JuegoService )
   {

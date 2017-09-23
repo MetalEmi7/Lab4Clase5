@@ -10,8 +10,8 @@ export class Juego
 
 constructor()
 {
-  this.nombreJuego="nom";
-  this.jugador="jug";
+  this.nombreJuego="Adivina el juego";
+  this.jugador=localStorage.getItem("user");
   this.resultado=false;
 }
 
